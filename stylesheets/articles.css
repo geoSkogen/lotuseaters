@@ -1,0 +1,208 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.flexOuterCenter,
+.flexOuterStart,
+.flexOuterColumn,
+.iconShell,
+.peaProtein,
+.hammerTime,
+.smuckerzd {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flexOuterStart {
+  justify-content: flex-start
+}
+
+.flexOuterColumn,
+.iconShell {
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+
+.totalWrapper,
+.imageWrapper {
+  position: relative;
+  //border: 1px solid red;
+}
+
+a:link {
+  color: cornflowerblue;
+  text-decoration: none;
+
+}
+
+#formShell {
+
+}
+
+form {
+  position: absolute;
+  top: -10%;
+  z-index: 1;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+textarea,
+input {
+  border-radius: 3px;
+  border: 1px solid cornflowerblue;
+  padding: 0.75em;
+  margin: 0.33em;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  opacity: 0.7;
+
+}
+
+textarea {
+  width: 18em;
+  height: 18em;
+}
+
+input {
+  width: 18em;
+}
+
+.label,
+input[type="submit"] {
+  opacity: 0.7;
+}
+
+input[type="submit"] {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  border-radius: 3px;
+  padding: 0.33em;
+  margin: 0.33em;
+}
+
+.label {
+  padding: 0.2em;
+  margin: 0.1em;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Courier;
+  color: cornflowerblue;
+  /* //uncomment for dorky button look
+  background-color: white;
+  border: 1px solid cornflowerblue;
+  border-radius: 100%;
+  */
+}
+
+img {
+
+}
+
+div {
+
+}
+
+p {
+  font-size: 16px;
+  color: black;
+}
+
+
+h1 {
+  font-size: 48px;
+}
+
+
+#header {
+  padding: 1em 0.5em 0.5em 0.5em;
+  opacity: 0.6;
+  font-size: 48px;
+  font-weight: bold;
+  /* //uncomment for dorky button look
+  border: 1px solid black;
+  background-color: gainsboro;
+  border-radius: 100%;
+  */
+}
+
+.customHR {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  margin: 1em 0 1em 0;
+}
+
+#deadHeader {
+  position: absolute;
+  top: 30%;
+  opacity: 0.3;
+}
+
+#nav {
+  padding: 0.33em;
+  display: none;
+}
+
+.menuIconBar {
+  height: 3px;
+  width: 1.16em;
+  margin: 0.16em;
+  background-color: whitesmoke;
+}
+
+.peaProtein,
+.navButt,
+#menuIcon {
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 3px;
+  opacity: 0.6;
+  padding: 0.33em 0.16em 0.33em 0em;
+}
+
+.peaProtein,
+.hammerTime,
+.smuckerzd {
+  font-family: Courier;
+  //z-index: 2;
+}
+
+.navButt,
+#menuIcon {
+  font-size: 24px;
+  padding: 0.5em;
+  margin: 0.2em;
+  opacity: 0.4;
+}
+
+#menuIcon {
+  padding: 0.33em;
+}
+
+.navButt:hover,
+#menuIcon:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.padLeft {
+  padding: 0 0 0 0.6em;
+}
+
+.padLeftLess {
+  padding: 0 0 0 0.33em;
+}
+
+#imageShell {
+  max-width: 960px;
+}

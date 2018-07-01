@@ -1,0 +1,69 @@
+<div class="flexOuterStart" id="navOpen">
+  <div class="iconShell" id="menuIcon">
+    <div class="menuIconBar"></div>
+    <div class="menuIconBar"></div>
+    <div class="menuIconBar"></div>
+  </div>
+</div>
+
+<div class="flexOuterCenter" id="headerBackground">
+  <div id="header" class="smuckerzd">
+    <div class="flexOuterCenter">
+      <div><</div><div>submit/</div><div>></div>
+    </div>
+  </div>
+</div>
+<div class="customHR"></div>
+
+<div class="flexOuterCenter" id="nav">
+  <div class="navButt">this</div>
+  <div class="navButt">thesis</div>
+  <div class="navButt">phthsis</div>
+  <div class="navButt">antithesis</div>
+  <div class="navButt">pith</div>
+</div>
+
+<div class="totalWrapper">
+  <div class="flexOuterCenter">
+    <h1 id="deadHeader">
+      <div class="peaProtein">
+        <div class="flexOuterCenter">
+          <div class="padLeft"><</div>dead<div>></div>
+        </div>
+        <div><!--meta-content?--></div>
+        <div class="flexOuterCenter">
+          <div class="padLeft"><</div>/dead<div>></div>
+        </div>
+      </div>
+    </h1>
+  </div>
+  <div class="flexOuterCenter" id="formShell">
+    <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+      <div class="flexOuterCenter">
+        <div class="label">
+          <div class="flexOuterCenter">
+            <div><</div><div>title/</div><div>></div>
+          </div>
+        </div>
+      </div>
+        <!--<%= form.label :title%>-->
+      <div class=flexOuterCenter>
+        <%= form.text_field :title%>
+      </div>
+      <div class="flexOuterCenter">
+        <div class="label">
+          <div class="flexOuterCenter">
+            <div><</div><div>text/</div><div>></div>
+          </div>
+        </div>
+      </div>
+        <!--<%= form.label :text %>-->
+      <div class="flexOuterCenter">
+      <%= form.text_area :text %>
+    </div>
+    <p>
+      <%= form.submit %>
+    </p>
+    <% end %>
+  </div>
+</div>
