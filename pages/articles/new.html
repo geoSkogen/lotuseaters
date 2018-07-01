@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>
+  </title>
+
+  <link rel="stylesheet" href="../../stylesheets/articles.css"/>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<!--<script>
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+</script>-->
+
+</head>
+<body>
+
 <div class="flexOuterStart" id="navOpen">
   <div class="iconShell" id="menuIcon">
     <div class="menuIconBar"></div>
@@ -16,8 +34,8 @@
 <div class="customHR"></div>
 
 <div class="flexOuterCenter" id="nav">
-  <div class="navButt">this</div>
-  <div class="navButt">thesis</div>
+  <div class="navButt"><a href="../../index.html">this</a></div>
+  <div class="navButt"><a href="./new.html">thesis</a></div>
   <div class="navButt">phthsis</div>
   <div class="navButt">antithesis</div>
   <div class="navButt">pith</div>
@@ -38,7 +56,8 @@
     </h1>
   </div>
   <div class="flexOuterCenter" id="formShell">
-    <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+    <!--<%= form_with scope: :article, url: articles_path, local: true do |form| %>-->
+    <div class="fauxForm">
       <div class="flexOuterCenter">
         <div class="label">
           <div class="flexOuterCenter">
@@ -48,7 +67,8 @@
       </div>
         <!--<%= form.label :title%>-->
       <div class=flexOuterCenter>
-        <%= form.text_field :title%>
+        <!--<%= form.text_field :title%>-->
+        <input name="title" type="text"/>
       </div>
       <div class="flexOuterCenter">
         <div class="label">
@@ -59,11 +79,21 @@
       </div>
         <!--<%= form.label :text %>-->
       <div class="flexOuterCenter">
-      <%= form.text_area :text %>
+      <!--<%= form.text_area :text %>-->
+        <textarea name="text"></textarea>
+      </div>
+      <p>
+      <!--<%= form.submit %>-->
+        <input type="submit" value="<submit/>"/>
+      </p>
+    <!--<% end %>-->
     </div>
-    <p>
-      <%= form.submit %>
-    </p>
-    <% end %>
   </div>
 </div>
+
+</body>
+
+<script src="../../lib/navShell.js"></script>
+<script src="../../lib/navButtons.js"></script>
+
+</html>
