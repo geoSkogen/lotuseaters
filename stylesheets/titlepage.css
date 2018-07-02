@@ -28,6 +28,7 @@ body {
 .totalWrapper,
 .imageWrapper {
   position: relative;
+  min-height: 360px;
   //border: 1px solid red;
 }
 
@@ -176,8 +177,8 @@ h1 {
 
 #oilboil_0,
 #oilboil_1 {
-  width: 480px;
-  height: 360px;
+  width: 155px;
+  //height: 360px;
   //position: absolute;
 }
 
