@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>
+  </title>
+
+  <link rel="stylesheet" href="../../stylesheets/articles.css"/>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<!--<script>
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+</script>-->
+
+</head>
+<body>
+
+<div class="navIconShell">
+  <div class="flexOuterStart" id="navOpen">
+    <div class="iconShell" id="menuIcon">
+      <div class="menuIconBar"></div>
+      <div class="menuIconBar"></div>
+      <div class="menuIconBar"></div>
+    </div>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="flexOuterCenter" id="nav">
+    <div class="navButt"><%= link_to 'this', root_path %></div>
+    <div class="navButt"><%= link_to 'thesis', new_article_path %></div>
+    <div class="navButt">phthsis</div>
+    <div class="navButt">antithesis</div>
+    <div class="navButt"><%= link_to 'pith', controller: 'articles' %></div>
+  </div>
+  <div class="customHR"></div>
+</div>
+
+<div class="flexOuterCenter" id="headerBackground">
+  <div id="headerIndex" class="smuckerzd">
+    <div class="flexOuterCenter">
+      <div><</div><div>all/</div><div>></div>
+    </div>
+  </div>
+</div>
+
+<div class="customHR"></div>
+<div class="totalWrapper">
+  <div class="flexOuterCenter">
+    <h1 id="deadHeader">
+      <div class="peaProtein">
+        <div class="tagBox">
+          <div class="padLeft"><</div>dead<div>></div>
+        </div>
+        <div><!--meta-content?--></div>
+        <div class="tagBox">
+          <div class="padLeft"><</div>/dead<div>></div>
+        </div>
+      </div>
+    </h1>
+  </div>
+  <div class="flexOuterEnd">
+    <div class="navButt" id="submit">
+      <%= link_to '<submit/>', new_article_path %>
+    </div>
+  </div>
+  <div class="flexOuterCenter">
+    <table class="slideTable">
+      <tr>
+        <th>
+          <div class="tagBox">
+            <div><</div><div>title/</div><div>></div>
+          </div>
+        </th>
+        <th>
+          <div class="tagBox">
+            <div><</div><div>text/</div><div>></div>
+          </div>
+        </th>
+        <th></th>
+      </tr>
+      <% @articles.each do |article| %>
+        <tr>
+          <td><%= article.title %></td>
+          <td><%= article.text %></td>
+          <td>
+            <div class="navButtJr">
+              <%= link_to 'README', article_path(article) %>
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
+
+</body>
+
+<script src="../../lib/navShell.js"></script>
+<script src="../../lib/navButtons.js"></script>
+
+</html>

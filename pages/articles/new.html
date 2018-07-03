@@ -16,30 +16,35 @@
 </head>
 <body>
 
-<div class="flexOuterStart" id="navOpen">
-  <div class="iconShell" id="menuIcon">
-    <div class="menuIconBar"></div>
-    <div class="menuIconBar"></div>
-    <div class="menuIconBar"></div>
-  </div>
-</div>
-
-<div class="flexOuterCenter" id="headerBackground">
-  <div id="header" class="smuckerzd">
-    <div class="flexOuterCenter">
-      <div><</div><div>submit/</div><div>></div>
+  <div class="navIconShell">
+    <div class="flexOuterStart" id="navOpen">
+      <div class="iconShell" id="menuIcon">
+        <div class="menuIconBar"></div>
+        <div class="menuIconBar"></div>
+        <div class="menuIconBar"></div>
+      </div>
     </div>
   </div>
-</div>
-<div class="customHR"></div>
 
-<div class="flexOuterCenter" id="nav">
-  <div class="navButt"><a href="../../index.html">this</a></div>
-  <div class="navButt"><a href="./new.html">thesis</a></div>
-  <div class="navButt">phthsis</div>
-  <div class="navButt">antithesis</div>
-  <div class="navButt">pith</div>
-</div>
+  <div class="nav">
+    <div class="flexOuterCenter" id="nav">
+      <div class="navButt"><%= link_to 'this', root_path %></div>
+      <div class="navButt"><%= link_to 'thesis', new_article_path %></div>
+      <div class="navButt">phthsis</div>
+      <div class="navButt">antithesis</div>
+      <div class="navButt"><%= link_to 'pith', controller: 'articles' %></div>
+    </div>
+    <div class="customHR"></div>
+  </div>
+
+  <div class="flexOuterCenter" id="headerBackground">
+    <div id="headerIndex" class="smuckerzd">
+      <div class="flexOuterCenter">
+        <div><</div><div>submit/</div><div>></div>
+      </div>
+    </div>
+  </div>
+  <div class="customHR"></div>
 
 <div class="totalWrapper">
   <div class="flexOuterCenter">

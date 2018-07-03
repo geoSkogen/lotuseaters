@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -28,34 +30,40 @@ body {
 .totalWrapper,
 .imageWrapper {
   position: relative;
-  min-height: 360px;
   //border: 1px solid red;
 }
+
 
 a:link {
   color: whitesmoke;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
   color: whitesmoke;
   text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:active {
   color: whitesmoke;
   text-decoration: none;
-}
-
-a:visited{
-  color: whitesmoke;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 img {
+
 }
 
 div {
+
 }
 
 p {
@@ -68,9 +76,18 @@ h1 {
   font-size: 48px;
 }
 
-#nav {
+.nav {
   padding: 0.33em;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: none;
+}
+
+.navIconShell {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #header,
@@ -113,7 +130,7 @@ h1 {
   color: whitesmoke;
   background-color: black;
   border-radius: 3px;
-  opacity: 0.5;
+  opacity: 0.6;
   padding: 0.33em 0.16em 0.33em 0em;
 }
 
@@ -177,8 +194,8 @@ h1 {
 
 #oilboil_0,
 #oilboil_1 {
-  width: 155px;
-  //height: 360px;
+  width: 480px;
+  height: 360px;
   //position: absolute;
 }
 
