@@ -1,0 +1,43 @@
+<div class="flexOuterStart" id="navOpen">
+  <div class="iconShell" id="menuIcon">
+    <div class="menuIconBar"></div>
+    <div class="menuIconBar"></div>
+    <div class="menuIconBar"></div>
+  </div>
+</div>
+
+<div class="flexOuterCenter" id="nav">
+  <div class="navButt"><%= link_to 'this', root_path %></div>
+  <div class="navButt"><%= link_to 'thesis', new_article_path %></div>
+  <div class="navButt">phthsis</div>
+  <div class="navButt">antithesis</div>
+  <div class="navButt"><%= link_to 'pith', controller: 'articles' %></div>
+</div>
+
+<div class="flexOuterCenter">
+  <div class="peaProtein" id="articleTitle">
+    <%= @article.title %>
+  </div>
+</div>
+<div class="customHR" id="articleHR"></div>
+
+<div class="totalWrapper">
+  <div class="flexOuterCenter">
+    <h1 id="deadHeader">
+      <div class="peaProtein">
+        <div class="flexOuterCenter">
+          <div class="padLeft"><</div>dead<div>></div>
+        </div>
+        <div><!--meta-content?--></div>
+        <div class="flexOuterCenter">
+          <div class="padLeft"><</div>/dead<div>></div>
+        </div>
+      </div>
+    </h1>
+  </div>
+  <div class="flexOuterCenter">
+    <div class="hammerTime" id="articleText">
+      <%= @article.text %>
+    </div>
+  </div>
+</div>

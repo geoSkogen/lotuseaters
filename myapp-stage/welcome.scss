@@ -1,0 +1,203 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.flexOuterCenter,
+.flexOuterStart,
+.flexOuterColumn,
+.iconShell,
+.peaProtein,
+.hammerTime,
+.smuckerzd {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flexOuterStart {
+  justify-content: flex-start
+}
+
+.flexOuterColumn,
+.iconShell {
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.totalWrapper,
+.imageWrapper {
+  position: relative;
+  //border: 1px solid red;
+}
+
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+
+}
+
+div {
+
+}
+
+p {
+  font-size: 16px;
+  color: black;
+}
+
+
+h1 {
+  font-size: 48px;
+}
+
+#nav {
+  padding: 0.33em;
+  /*display: none;*/
+}
+
+#header,
+#first,
+#second,
+#third {
+  position: absolute;
+}
+
+#header {
+  top: -6%;
+}
+
+#first {
+  top: 49%;
+  z-index: 1;
+}
+
+#second {
+  top: 36%;
+  z-index: 2;
+}
+
+#third {
+  display: block;
+  top: 60%;
+  z-index: 2;
+}
+
+.menuIconBar {
+  height: 3px;
+  width: 1.16em;
+  margin: 0.16em;
+  background-color: whitesmoke;
+}
+
+.peaProtein,
+.navButt,
+#menuIcon {
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 3px;
+  opacity: 0.6;
+  padding: 0.33em 0.16em 0.33em 0em;
+}
+
+.peaProtein,
+.hammerTime,
+.smuckerzd {
+  font-family: Courier;
+}
+
+.navButt,
+#menuIcon {
+  font-size: 24px;
+  padding: 0.5em;
+  margin: 0.2em;
+  opacity: 0.4;
+}
+
+#menuIcon {
+  padding: 0.33em;
+}
+
+.navButt:hover,
+#menuIcon:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+
+.padLeft {
+  padding: 0 0 0 0.6em;
+}
+
+.padLeftLess {
+  padding: 0 0 0 0.33em;
+}
+
+#imageShell {
+  max-width: 960px;
+}
+
+.hammerTime {
+  font-size: 32px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: grey;
+  border-radius: 3px;
+  opacity: 0.6;
+  padding: 0.5em;
+}
+
+.smuckerzd {
+  font-size: 64px;
+  //font-weight: bold;
+  opacity: 0.4;
+}
+
+.window {
+  opacity: 0.5;
+  flex: 1 1 50%;
+}
+
+#oilboil_0,
+#oilboil_1 {
+  width: 480px;
+  height: 360px;
+  //position: absolute;
+}
+
+#oilboil_0 {
+  //border-radius: 3px 0 0 3px;
+  //left: 2%;
+}
+
+#oilboil_1 {
+  //border-radius: 0 3px 3px 0;
+  //right: 2%;
+}
