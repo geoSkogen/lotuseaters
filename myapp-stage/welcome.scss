@@ -78,10 +78,19 @@ h1 {
   font-size: 48px;
 }
 
-#nav {
+.nav {
   padding: 0.33em;
+  position: fixed;
+  top: 0;
+  width: 100%;
   /*display: none;*/
 }
+
+.navIconShell {
+  position: fixed;
+  top: 0;
+  left: 0;
+}  
 
 #header,
 #first,

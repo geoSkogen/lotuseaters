@@ -19,12 +19,14 @@
   <div class="customHR"></div>
 </div>
 
-<div class="flexOuterCenter">
-  <div class="peaProtein" id="articleTitle">
-    <%= @article.title %>
+<div class="flexOuterCenter" id="headerBackground">
+  <div id="headerIndex" class="smuckerzd">
+    <div class="flexOuterCenter">
+      <div><</div><div>submit/</div><div>></div>
+    </div>
   </div>
 </div>
-<div class="customHR" id="articleHR"></div>
+<div class="customHR"></div>
 
 <div class="totalWrapper">
   <div class="flexOuterCenter">
@@ -40,9 +42,33 @@
       </div>
     </h1>
   </div>
-  <div class="flexOuterCenter">
-    <div class="hammerTime" id="articleText">
-      <%= @article.text %>
+  <div class="flexOuterCenter" id="formShell">
+    <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+      <div class="flexOuterCenter">
+        <div class="label">
+          <div class="flexOuterCenter">
+            <div><</div><div>title/</div><div>></div>
+          </div>
+        </div>
+      </div>
+        <!--<%= form.label :title%>-->
+      <div class=flexOuterCenter>
+        <%= form.text_field :title%>
+      </div>
+      <div class="flexOuterCenter">
+        <div class="label">
+          <div class="flexOuterCenter">
+            <div><</div><div>text/</div><div>></div>
+          </div>
+        </div>
+      </div>
+        <!--<%= form.label :text %>-->
+      <div class="flexOuterCenter">
+      <%= form.text_area :text %>
     </div>
+    <p>
+      <%= form.submit :value => '<submit/>'%>
+    </p>
+    <% end %>
   </div>
 </div>
