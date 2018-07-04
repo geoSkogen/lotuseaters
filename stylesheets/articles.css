@@ -241,6 +241,7 @@ h1 {
 .peaProtein,
 .navButt,
 .navButtJr,
+.navButt_navClose,
 #menuIcon {
   color: whitesmoke;
   background-color: black;
@@ -292,9 +293,22 @@ h1 {
 
 .navButt:hover,
 .navButtJr:hover,
+.navButt_navClose:hover,
 #menuIcon:hover {
   cursor: pointer;
   opacity: 0.85;
+}
+
+#navClose {
+}
+
+.navButt_navClose {
+  padding: 0.2em 1.5em 0.2em 0.5em;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0.4em 0.75em 0 0;
+  opacity: 0.2;
+  max-height: 1em;
 }
 
 .padLeft {
