@@ -28,13 +28,13 @@
 
   <div class="nav">
     <div class="flexOuterCenter" id="nav">
-      <div class="navButt"><%= link_to 'this', root_path %></div>
-      <div class="navButt"><%= link_to 'thesis', new_article_path %></div>
-      <div class="navButt">phthsis</div>
-      <div class="navButt">antithesis</div>
-      <div class="navButt"><%= link_to 'pith', controller: 'articles' %></div>
+      <div class="navButt"><a href="../../index.html">this</a></div>
+      <div class="navButt"><a href="./new.html">thesis</a></div>
+      <div class="navButt"><a href="#">phthsis</a></div>
+      <div class="navButt"><a href="#">antithesis</a></div>
+      <div class="navButt"><a href="./all.html">pith</a></div>
     </div>
-    <!--<div class="customHR"></div>-->
+    <div class="customHR"></div>
   </div>
 
   <div class="flexOuterCenter" id="headerBackground">
@@ -73,7 +73,7 @@
         <!--<%= form.label :title%>-->
       <div class=flexOuterCenter>
         <!--<%= form.text_field :title%>-->
-        <input name="title" type="text"/>
+        <input name="title" type="text" value="texting and driving"/>
       </div>
       <div class="flexOuterCenter">
         <div class="label">
@@ -85,7 +85,7 @@
         <!--<%= form.label :text %>-->
       <div class="flexOuterCenter">
       <!--<%= form.text_area :text %>-->
-        <textarea name="text"></textarea>
+        <textarea name="text">will get you kilt ded</textarea>
       </div>
       <p>
       <!--<%= form.submit %>-->

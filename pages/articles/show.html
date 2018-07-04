@@ -28,18 +28,18 @@
 
 <div class="nav">
   <div class="flexOuterCenter" id="nav">
-    <div class="navButt"><%= link_to 'this', root_path %></div>
-    <div class="navButt"><%= link_to 'thesis', new_article_path %></div>
-    <div class="navButt">phthsis</div>
-    <div class="navButt">antithesis</div>
-    <div class="navButt"><%= link_to 'pith', controller: 'articles' %></div>
+    <div class="navButt"><a href="../../index.html">this</a></div>
+    <div class="navButt"><a href="./new.html">thesis</a></div>
+    <div class="navButt"><a href="#">phthsis</a></div>
+    <div class="navButt"><a href="#">antithesis</a></div>
+    <div class="navButt"><a href="./all.html">pith</a></div>
   </div>
   <div class="customHR"></div>
 </div>
 
-<div class="flexOuterCenter">
+<div class="flexOuterCenter" id="headerBackground">
   <div class="peaProtein" id="articleTitle">
-    <%= @article.title %>
+    <div>texting and driving</div>
   </div>
 </div>
 <div class="customHR" id="articleHR"></div>
@@ -60,7 +60,7 @@
   </div>
   <div class="flexOuterCenter">
     <div class="hammerTime" id="articleText">
-      <%= @article.text %>
+      <div>will get you kilt ded</div>
     </div>
   </div>
 </div>

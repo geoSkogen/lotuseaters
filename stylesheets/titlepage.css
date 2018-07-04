@@ -11,7 +11,8 @@ body {
 .iconShell,
 .peaProtein,
 .hammerTime,
-.smuckerzd {
+.smuckerzd,
+.nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -30,7 +31,7 @@ body {
 .totalWrapper,
 .imageWrapper {
   position: relative;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   margin-top: 4em;
 }
 
