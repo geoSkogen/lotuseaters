@@ -182,7 +182,8 @@ h1 {
 }
 
 #imageShell {
-  max-width: 960px;
+  height: 116px;
+  width: 155px;
 }
 
 .hammerTime {
@@ -197,7 +198,7 @@ h1 {
 
 .smuckerzd {
   font-size: 64px;
-  //font-weight: bold;
+  /*font-weight: bold;*/
   opacity: 0.4;
 }
 
@@ -208,17 +209,16 @@ h1 {
 
 #oilboil_0,
 #oilboil_1 {
-  width: 480px;
-  height: 360px;
-  //position: absolute;
+  width: 155px;
+  height: 116px;
 }
 
 #oilboil_0 {
-  //border-radius: 3px 0 0 3px;
-  //left: 2%;
+  background-image: url(../images/oilboil_0_155.jpg);
+  border-radius: 3px 0 0 3px;
 }
 
 #oilboil_1 {
-  //border-radius: 0 3px 3px 0;
-  //right: 2%;
+  background-image: url(../images/oilboil_1_155.jpg);
+  border-radius: 0 3px 3px 0;
 }
