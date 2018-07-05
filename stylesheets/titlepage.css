@@ -90,17 +90,25 @@ h1 {
 }
 
 .nav {
-  padding: 0.33em;
+  padding: 0;
   position: fixed;
   top: 0;
   width: 100%;
   display: none;
+  opacity: 1;
+  background-color: white;
+  z-index: 5;
+}
+
+#nav {
+  padding: 0.33em;
 }
 
 .navIconShell {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 
 #header,
