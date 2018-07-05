@@ -32,7 +32,11 @@ body {
 .imageWrapper {
   position: relative;
   /*border: 1px solid red;*/
-  margin-top: 4em;
+  margin-top: 9em;
+}
+
+@media only screen and (min-width: 620px) {
+  .totalWrapper { margin-top: 5em;}
 }
 
 
@@ -73,9 +77,16 @@ p {
   color: black;
 }
 
-
 h1 {
-  font-size: 48px;
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 620px) {
+  h1 {font-size: 38px;}
+}
+
+@media only screen and (min-width: 960px) {
+  h1 {font-size: 48px;}
 }
 
 .nav {
@@ -104,19 +115,43 @@ h1 {
 }
 
 #first {
-  top: 49%;
+  top: 64%;
   z-index: 1;
 }
 
+@media only screen and (min-width: 620px) {
+  #first { top: 64%; }
+}
+
+@media only screen and (min-width: 960px) {
+  #first { top: 49%; }
+}
+
 #second {
-  top: 36%;
+  top: 50%;
   z-index: 2;
+}
+
+@media only screen and (min-width: 600px) {
+  #second { top: 47%; }
+}
+
+@media only screen and (min-width: 960px) {
+  #second { top: 36%; }
 }
 
 #third {
   display: block;
-  top: 60%;
+  top: 82%;
   z-index: 2;
+}
+
+@media only screen and (min-width: 600px) {
+  #third { top: 78%; }
+}
+
+@media only screen and (min-width: 960px) {
+  #third { top: 60%; }
 }
 
 .menuIconBar {
@@ -187,19 +222,34 @@ h1 {
 }
 
 .hammerTime {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: bold;
   background-color: whitesmoke;
   color: grey;
   border-radius: 3px;
   opacity: 0.6;
-  padding: 0.5em;
+  padding: 0.33em;
+}
+
+@media only screen and (min-width: 620px) {
+  .hammerTime { font-size: 24px; }
+}
+
+@media only screen and (min-width: 960px) {
+  .hammerTime { font-size: 32px; }
 }
 
 .smuckerzd {
-  font-size: 64px;
+  font-size: 24px;
   /*font-weight: bold;*/
   opacity: 0.4;
+}
+@media only screen and (min-width: 620px) {
+  .smuckerzd { font-size: 44px; }
+}
+
+@media only screen and (min-width: 960px) {
+  .smuckerzd { font-size: 64px; }
 }
 
 .window {
@@ -221,4 +271,42 @@ h1 {
 #oilboil_1 {
   background-image: url(../images/oilboil_1_155.jpg);
   border-radius: 0 3px 3px 0;
+}
+
+@media only screen and (min-width: 620px) {
+
+  #oilboil_0,
+  #oilboil_1 {
+    width: 300px;
+    height: 225px;
+  }
+
+  #oilboil_0 {
+    background-image: url(../images/oilboil_0_300.jpg);
+    border-radius: 3px 0 0 3px;
+  }
+
+  #oilboil_1 {
+    background-image: url(../images/oilboil_1_300.jpg);
+    border-radius: 0 3px 3px 0;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  #oilboil_0,
+  #oilboil_1 {
+    width: 480px;
+    height: 360px;
+  }
+
+  #oilboil_0 {
+    background-image: url(../images/oilboil_0.jpg);
+    border-radius: 3px 0 0 3px;
+  }
+
+  #oilboil_1 {
+    background-image: url(../images/oilboil_1.jpg);
+    border-radius: 0 3px 3px 0;
+  }
 }
