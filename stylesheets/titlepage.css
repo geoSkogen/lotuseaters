@@ -12,14 +12,18 @@ body {
 .peaProtein,
 .hammerTime,
 .smuckerzd,
+.smuckerzdTitle,
+.smuckerzdTitleQuiet,
 .nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.flexOuterStart {
-  justify-content: flex-start
+.flexOuterStart,
+.smuckerzdTitle,
+.smuckerzdTitleQuiet {
+  justify-content: flex-start;
 }
 
 .flexOuterColumn,
@@ -87,6 +91,16 @@ h1 {
 
 @media only screen and (min-width: 960px) {
   h1 {font-size: 48px;}
+}
+
+.elbowRoom {
+  margin: 0
+}
+
+@media only screen and (min-width: 620px) {
+  .elbowRoom {
+    margin: 15%;
+  }
 }
 
 .nav {
@@ -203,21 +217,32 @@ h1 {
 
 .peaProtein,
 .hammerTime,
-.smuckerzd {
+.smuckerzd,
+.smuckerzdTitle,
+.smuckerzdTitleQuiet {
   font-family: Courier;
+}
+
+.smuckerzdTitle,
+.smuckerzdTitleQuiet {
+  padding: 0.5em;
+}
+
+.smuckerzdTitle {
+  font-weight: bold;
+  opacity: 0.6;
+}
+.smuckerzd,
+.smuckerzdTitleQuiet {
+  opacity: 0.4;
+}
+
+.smuckerzd {
+
 }
 
 #articleTitle,
 #headerIndex {
-  padding: 0.5em;
-  opacity: 0.6;
-  /*font-size: 48px;*/
-  font-weight: bold;
-  /* //uncomment for dorky button look
-  border: 1px solid black;
-  background-color: gainsboro;
-  border-radius: 100%;
-  */
 }
 
 .navButt,
@@ -285,17 +310,22 @@ h1 {
   .hammerTime { font-size: 32px; }
 }
 
-.smuckerzd {
+.smuckerzd,
+.smuckerzdTitle,
+.smuckerzdTitleQuiet {
   font-size: 24px;
   /*font-weight: bold;*/
-  opacity: 0.4;
 }
 @media only screen and (min-width: 620px) {
-  .smuckerzd { font-size: 44px; }
+  .smuckerzd,
+  .smuckerzdTitle,
+  .smuckerzdTitleQuiet { font-size: 44px; }
 }
 
 @media only screen and (min-width: 960px) {
-  .smuckerzd { font-size: 64px; }
+  .smuckerzd,
+  .smuckerzdTitle,
+  .smuckerzdTitleQuiet { font-size: 64px; }
 }
 
 .window {
