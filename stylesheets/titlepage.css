@@ -333,56 +333,56 @@ h1 {
   flex: 1 1 50%;
 }
 
-#oilboil_0,
-#oilboil_1 {
+#bomashaL,
+#bomashaR {
   width: 155px;
   height: 116px;
 }
 
-#oilboil_0 {
-  background-image: url(../images/oilboil_0_155.jpg);
+#bomashaL {
+  background-image: url(../images/bomashaL_155.png);
   border-radius: 3px 0 0 3px;
 }
 
-#oilboil_1 {
-  background-image: url(../images/oilboil_1_155.jpg);
+#bomashaR {
+  background-image: url(../images/bomashaL_155_flip.png);
   border-radius: 0 3px 3px 0;
 }
 
 @media only screen and (min-width: 620px) {
 
-  #oilboil_0,
-  #oilboil_1 {
+  #bomashaL,
+  #bomashaR {
     width: 300px;
     height: 225px;
   }
 
-  #oilboil_0 {
-    background-image: url(../images/oilboil_0_300.jpg);
+  #bomashaL {
+    background-image: url(../images/bomashaL_300.png);
     border-radius: 3px 0 0 3px;
   }
 
-  #oilboil_1 {
-    background-image: url(../images/oilboil_1_300.jpg);
+  #bomashaR {
+    background-image: url(../images/bomashal_300_flip.png);
     border-radius: 0 3px 3px 0;
   }
 }
 
 @media only screen and (min-width: 960px) {
 
-  #oilboil_0,
-  #oilboil_1 {
+  #bomashaL,
+  #bomashaR {
     width: 480px;
     height: 360px;
   }
 
-  #oilboil_0 {
-    background-image: url(../images/oilboil_0.jpg);
+  #bomashaL {
+    background-image: url(../images/bomashaL_480.png);
     border-radius: 3px 0 0 3px;
   }
 
-  #oilboil_1 {
-    background-image: url(../images/oilboil_1.jpg);
+  #bomashaR {
+    background-image: url(../images/bomashaL_480_flip.png);
     border-radius: 0 3px 3px 0;
   }
 }
