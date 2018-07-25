@@ -340,12 +340,12 @@ h1 {
 }
 
 #bomashaL {
-  background-image: url(../images/bomashaL_155.png);
+  background-image: url(../images/bomashaR_155_flip.png);
   border-radius: 3px 0 0 3px;
 }
 
 #bomashaR {
-  background-image: url(../images/bomashaL_155_flip.png);
+  background-image: url(../images/bomashaR_155.png);
   border-radius: 0 3px 3px 0;
 }
 
@@ -358,12 +358,12 @@ h1 {
   }
 
   #bomashaL {
-    background-image: url(../images/bomashaL_300.png);
+    background-image: url(../images/bomashaR_300_flip.png);
     border-radius: 3px 0 0 3px;
   }
 
   #bomashaR {
-    background-image: url(../images/bomashal_300_flip.png);
+    background-image: url(../images/bomashaR_300.png);
     border-radius: 0 3px 3px 0;
   }
 }
@@ -377,12 +377,12 @@ h1 {
   }
 
   #bomashaL {
-    background-image: url(../images/bomashaL_480.png);
+    background-image: url(../images/bomashaR_480_flip.png);
     border-radius: 3px 0 0 3px;
   }
 
   #bomashaR {
-    background-image: url(../images/bomashaL_480_flip.png);
+    background-image: url(../images/bomashaR_480.png);
     border-radius: 0 3px 3px 0;
   }
 }
